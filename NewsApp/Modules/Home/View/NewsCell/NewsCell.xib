@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNY-cf-ILt" userLabel="ContentView" customClass="DesignableUIButton" customModule="NewsApp" customModuleProvider="target">
+                        <rect key="frame" x="15" y="5" width="274" height="256"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="od2-eP-yLy">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="256"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-AZ-HKa" customClass="DesignableUIImageView" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="215.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wAu-XC-bZo">
+                                        <rect key="frame" x="0.0" y="220.5" width="274" height="35.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgK-jX-Qtj" customClass="DesignableUILabel" customModule="NewsApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="19"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" name="TextGray"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2u-cs-9Ui" customClass="DesignableUILabel" customModule="NewsApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="19" width="274" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" name="MeduimGray"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="od2-eP-yLy" secondAttribute="trailing" id="H9s-iN-X18"/>
+                            <constraint firstAttribute="bottom" secondItem="od2-eP-yLy" secondAttribute="bottom" id="Rby-wv-mLs"/>
+                            <constraint firstItem="od2-eP-yLy" firstAttribute="leading" secondItem="WNY-cf-ILt" secondAttribute="leading" id="vcJ-n3-APl"/>
+                            <constraint firstItem="od2-eP-yLy" firstAttribute="top" secondItem="WNY-cf-ILt" secondAttribute="top" id="w83-1l-qsn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="BorderColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WNY-cf-ILt" secondAttribute="trailing" constant="15" id="1be-YK-moq"/>
+                <constraint firstAttribute="bottom" secondItem="WNY-cf-ILt" secondAttribute="bottom" constant="5" id="ZDh-vZ-MQT"/>
+                <constraint firstItem="WNY-cf-ILt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="mJo-SG-A0n"/>
+                <constraint firstItem="WNY-cf-ILt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="mdR-o0-Kcw"/>
+            </constraints>
+            <size key="customSize" width="304" height="266"/>
+            <connections>
+                <outlet property="newsImage_ImgView" destination="nmn-AZ-HKa" id="KIx-Xn-hwi"/>
+                <outlet property="source_lbl" destination="d2u-cs-9Ui" id="wXN-yI-2vW"/>
+                <outlet property="title_lbl" destination="qgK-jX-Qtj" id="5Zg-aq-5yu"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="d2u-cs-9Ui">
+            <size key="intrinsicContentSize" width="44.5" height="16.5"/>
+        </designable>
+        <designable name="nmn-AZ-HKa">
+            <size key="intrinsicContentSize" width="512" height="512"/>
+        </designable>
+        <designable name="qgK-jX-Qtj">
+            <size key="intrinsicContentSize" width="30" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="BorderColor">
+            <color red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MeduimGray">
+            <color red="0.6470000147819519" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextGray">
+            <color red="0.36899998784065247" green="0.36899998784065247" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
